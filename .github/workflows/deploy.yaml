@@ -22,45 +22,22 @@ jobs:
           mkdir mdbook
           curl -sSL $url | tar -xz --directory=./mdbook
           echo `pwd`/mdbook >> $GITHUB_PATH
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      # English
-      - name: Build Book - en
+      - name: Build Book
         run: |
-          # This assumes your book is in the root of your repository.
-          # Just add a `cd` here if you need to change to another directory.
-          cd en
-          mdbook build
-      - name: Upload en version
+          mkdir -p book
+          mdbook build en
+          mv en/book book/en
+          mdbook build de
+          mv de/book book/de
+
+      - name: Upload the books
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: 'en/book'
-          name: 'guide-en'
-      - name: Deploy en version
+          path: 'book'
+      - name: Deploy the books
         id: deployment-en
         uses: actions/deploy-pages@v4
-        with:
-          artifact_name: 'guide-en'
-          page_url: 'tanakhcc.github.io/en'
-
-      # German
-      - name: Build Book - de
-        run: |
-          # This assumes your book is in the root of your repository.
-          # Just add a `cd` here if you need to change to another directory.
-          cd de
-          mdbook build
-      - name: Upload de version
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload entire repository
-          path: 'de/book'
-          name: 'guide-de'
-      - name: Deploy de version
-        id: deployment-de
-        uses: actions/deploy-pages@v4
-        with:
-          artifact_name: 'guide-de'
-          page_url: 'tanakhcc.github.io/de'
