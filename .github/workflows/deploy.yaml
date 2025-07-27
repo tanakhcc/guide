@@ -28,11 +28,8 @@ jobs:
 
       - name: Build Book
         run: |
-          mkdir -p book
-          mdbook build en
-          mv en/book book/en
-          mdbook build de
-          mv de/book book/de
+          chmod +x build.sh
+          ./build.sh
 
       - name: Upload the books
         uses: actions/upload-pages-artifact@v3
