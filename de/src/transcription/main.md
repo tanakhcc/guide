@@ -20,7 +20,7 @@ If you choose a manuscript that already has one or two other transcriptions, tha
 Seeing your work pay off is motivating, so consider choosing manuscripts someone else has already transcribed - especially for your first few pages.
 
 ## Using the Transcription Editor
-(TODO:) Link to gitlab issue exists, which automatically starts the issue with the correct links and tags.
+(TODO:) Link to github issue exists, which automatically starts the issue with the correct links and tags.
 
 TODO - big section
 What you will do here

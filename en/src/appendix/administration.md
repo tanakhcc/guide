@@ -13,7 +13,7 @@ If you do not see obvious problems with the proposed transcription, there are no
 Decide in these questionable cases, ask if anyone feels the need to discuss your choice and **close the merge request a few days later**.
 To retain volunteer motivation, it is important to keep the feedback cycle quick.
 
-When needed, changes to the proposed final XML can be made directly in gitlab (or copy-paste the data into your own text editor and change it there).
+When needed, changes to the proposed final XML can be made directly in github (or copy-paste the data into your own text editor and change it there).
 When finished, add the change as a new commit in the merge request.
 
 - If the reconciler has chosen the *majority view* amongst transcribers, only seek clarification if you have serious doubts about that reconstruction.

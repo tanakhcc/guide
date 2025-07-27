@@ -8,7 +8,7 @@ Semantically, the same rules and guidelines from [the guide for manual transcrip
 You can find the Relax-NG schema that files have to adhere to [here](https://critic.tanakhcc.org/critic_tei_schema.rng).
 I suggest you use a Relax-NG extension for your text editor of choice and automatically check validity while you type.
 Please note that critic imposes some additional semantic restrictions that are not represented in our schema.
-To find out exactly how a transcriptions XML has to look like, check out any transcription [on gitlab](https://gitlab.tanakhcc.org/tanakhcc/critical-edition/transcriptions), and make sure to read [critics subspec definition](appendix/critic_subspec.html).
+To find out exactly how a transcriptions XML has to look like, check out any transcription [on github](https://github.com/tanakhcc/transcription), and make sure to read [critics subspec definition](appendix/critic_subspec.html).
 
 >[!NOTE]
 > Note in particular that metadata and public domain dedication have to be present for every individual page of a manuscript.

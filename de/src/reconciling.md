@@ -28,7 +28,7 @@ Here is how the recociliation workflow looks like:
       But: if an edit is required, make it.
     - When you manually edit a reconciliation, the merge request may take longer to approve.
       Please be patient when project maintainers may need to look closer at the transcription before merging to TanakhCC.
-    - And remember: If you ever have any questions, feel free to ask them as a gitlab issue.
+    - And remember: If you ever have any questions, feel free to ask them as a github issue.
       (TODO:) You will find a direct link to ask a question linked to this page and the used transcriptions directly in the reconciliation editor.
 - At the end, very carefully read over the reconciliation side-by-side with the manuscript image one last time so you have not missed anything.
   This may feel like a chore, but this additional ensure we do not miss anything.
