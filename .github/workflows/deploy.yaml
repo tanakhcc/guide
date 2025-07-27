@@ -37,7 +37,7 @@ jobs:
           path: 'en/book'
           name: 'guide-en'
       - name: Deploy en version
-        id: deployment
+        id: deployment-en
         uses: actions/deploy-pages@v4
         with:
           artifact_name: 'guide-en'
@@ -49,7 +49,7 @@ jobs:
           path: 'de/book'
           name: 'guide-de'
       - name: Deploy de version
-        id: deployment
+        id: deployment-de
         uses: actions/deploy-pages@v4
         with:
           artifact_name: 'guide-de'
