@@ -1,0 +1,6 @@
+[book]
+authors = ["Jonathan Schleucher"]
+language = "en"
+src = "src"
+title = "Contributing to TanakhCC"
+
